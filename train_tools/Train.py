@@ -112,7 +112,10 @@ def train(CONFIG_PATH, CONFIG, train_loader_adversarial_, val_loader_adversarial
     train_loader_len = int(CONFIG["TRAIN_DATASET_SIZE"] / CONFIG["TRAIN_BATCH_SIZE"])
     val_loader_len = int(CONFIG["VAL_DATASET_SIZE"] / CONFIG["TRAIN_BATCH_SIZE"])
     
-    current_iter = 0
+    if(CONFIG["MODE_LOADE"] == "continum"):
+        current_iter = CONFIG["CURRENT_ITER"]
+    else:
+        current_iter = 0
     
     for e in range(CONFIG["EPOCHS"]):
         model = model.train()
