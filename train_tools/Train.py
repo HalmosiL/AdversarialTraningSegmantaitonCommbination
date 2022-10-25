@@ -143,7 +143,8 @@ def train(CONFIG_PATH, CONFIG, train_loader_adversarial_, val_loader_adversarial
                 logging.debug(image_normal.shape)
                 logging.debug(target_normal.shape)
 
-                poly_learning_rate(optimizer, CONFIG['LEARNING_RATE'], current_iter, max_iter, power=CONFIG['POWER'])
+                if(CONFIG["MODE_LOADE"] != "continum"):
+                    poly_learning_rate(optimizer, CONFIG['LEARNING_RATE'], current_iter, max_iter, power=CONFIG['POWER'])
                 
                 remove_files = np.array(data[2]).flatten()
                 optimizer.zero_grad()
