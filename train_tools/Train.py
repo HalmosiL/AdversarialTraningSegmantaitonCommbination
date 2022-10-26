@@ -58,7 +58,7 @@ def train(CONFIG_PATH, CONFIG, train_loader_adversarial_, val_loader_adversarial
         print("Load Model.....")
         model.load_state_dict(torch.load(CONFIG["MODEL_CONTINUM_PATH"]))
 
-        optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
+        optimizer = torch.optim.Adam(model.parameters(), lr=0.00001)
         logging.info("Load optimizer.....")
 
         logging.info("Traning started.....")
