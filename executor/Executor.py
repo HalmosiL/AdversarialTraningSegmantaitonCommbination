@@ -242,7 +242,7 @@ class Executor:
 
                     if(not data['Executor_Finished_Val'] == "True" and data['MODE'] == "val"):
                         logging.info("START VAL GEN...")
-                        self.generateTrainData("val", 0)
+                        self.generateTrainData("val", 0, number_of_steps=3)
 
                     if(data['MODE'] == "off"):
                         logging.info("Stop Executor...")
