@@ -6,7 +6,14 @@ This repository is part of a university research project. Our goal with this sys
 ## Project Setup
 To start training
 
-First install Python 3. We advise you to install Python 3 and use pip to use our project:
+First install Python 3. add create conda env and enter in to it.
+
+```
+conda create -n robust-segmantation-train python=3.9
+source activate robust-segmantation-train
+```
+
+We advise you to install Python 3 and use pip to use our project:
 
 ```
 pip install -r ./requirements.txt
