@@ -31,5 +31,6 @@ https://github.com/mcordts/cityscapesScripts.git
 To start a traning please use this scripts
 
 ```
-
+./start_executor.sh ../configs/config_main.json
+python start_traning.py ../configs/config_main.json
 ```
