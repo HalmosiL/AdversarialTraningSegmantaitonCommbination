@@ -30,7 +30,12 @@ https://github.com/mcordts/cityscapesScripts.git
 ## Training
 To start a traning please use this scripts
 
+Start executor wait until it's setup
 ```
 ./start_executor.sh ../configs/config_main.json
+```
+
+Start traning
+```
 python start_traning.py ../configs/config_main.json
 ```
