@@ -26,3 +26,10 @@ pip install -r requirements.txt
 To install Cityscapes dataset we recomend you to use this repository:
 
 https://github.com/mcordts/cityscapesScripts.git
+
+## Training
+To start a traning please use this scripts
+
+```
+
+```
