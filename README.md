@@ -16,5 +16,10 @@ source activate robust-segmantation-train
 We advise you to install Python 3 and use pip to use our project:
 
 ```
-pip install -r ./requirements.txt
+cd $HOME
+git clone --recursive git@github.com:HalmosiL/Semantik_Segmentation_Adversarial_Training_CIRA-PDG.git
+cd Semantik_Segmentation_Adversarial_Training_CIRA-PDG
+pip install -r requirements.txt
 ```
+
+## Download Dataset
