@@ -31,7 +31,9 @@ https://github.com/mcordts/cityscapesScripts.git
 To start a traning please use this scripts
 
 Start executor wait until it's setup
+
 ```
+cd train_tools
 ./start_executor.sh ../configs/config_main.json
 ```
 
